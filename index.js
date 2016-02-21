@@ -93,7 +93,6 @@ var parse_ = function(parse_state_type, parse_state, parse_options, accum, line)
     }
 
     case CHAR: {
-
       var char = _.takeWhile (line, function(c) {
         return (!_.elem(parse_options.spaces, c) && !_.elem(parse_options.quotes, c));
       });
