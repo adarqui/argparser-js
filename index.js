@@ -60,8 +60,8 @@ var createParseOptions = function(spaces, quotes) {
 
 var parse = function(parse_options, line) {
   return (
-    _.map(parse_(NONE, defaultParseState, parse_options, [], _.toArray(line)), function(e) {
-      return _.join(e, "");
+    _.map(parse_(NONE, defaultParseState, parse_options, [], _.toArray(line)), function(argv) {
+      return _.join(argv, "");
     })
   );
 };
