@@ -1,0 +1,2 @@
+- throw some exceptions if parse_options isn't provided properly.
+- fix lint
